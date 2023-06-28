@@ -3,7 +3,7 @@ package prog17;
 import java.util.*;
 
 public class Prog17 {
-public void cmopare(int a[],int b[],int c[],int size1,int size2,int size3){
+public void compare(int a[],int b[],int c[],int size1,int size2,int size3){
 //   Scanner sc=new Scanner(System.in);
 //   int size4=sc.nextInt();
 //int d[]=new int[];
@@ -20,43 +20,43 @@ public void cmopare(int a[],int b[],int c[],int size1,int size2,int size3){
     {
         if(a[i]==b[j]){
             d[l]=b[j];
-            j++;
+            
             l++;
-            System.out.println(l);
+            //System.out.println(l);
             //System.out.println("print"+d[0]+d[1]);
         }
-        j++;
+       
         
     }
-    i++;
+   
    }
     System.out.println("match1");
-    for(int m=0;m<size1;m++){ 
-        System.out.println(d[m]);
-        m++;       
+    for( l=0;l<d.length;l++){ 
+        System.out.println(d[l]);
+             
     }
     
     
-    for(i=0;i<size1;i++) 
+    for(i=0;i<d.length;i++) 
    {
-    for(j=0;j<size2;j++)
+    for(j=0;j<size3;j++)
     {
         if(d[i]==c[j]){
-            e[l]=b[j];
-            j++;
+            e[l]=c[j];
+            
             l++;
-            System.out.println(l);
+           // System.out.println(l);
             //System.out.println("print"+d[0]+d[1]);
         }
-        j++;
+       
         
     }
-    i++;
+   
    }
     System.out.println("match2");
-    for(int m=0;m<size1;m++){ 
-        System.out.println(e[m]);
-        m++;       
+    for( l=0;l<e.length;l++){ 
+        System.out.println(e[l]);
+              
     }
     
 }
@@ -115,8 +115,8 @@ public void commonElements(int A[], int B[], int C[], int na, int nb, int nc)
             c[i]=sc.nextInt();
         
         Prog17 e=new Prog17();
-       // e.cmopare(a,b,c,size1,size2,size3);
-        e.commonElements(a,b,c,size1,size2,size3);
+        e.compare(a,b,c,size1,size2,size3);
+        //e.commonElements(a,b,c,size1,size2,size3);
     }
     
 }
